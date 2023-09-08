@@ -1,0 +1,91 @@
+associado/target/
+boleto/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+associado/.idea
+associado/*.iws
+associado/*.iml
+associado/*.ipr
+associado/gradle/*
+
+boleto/.idea
+boleto/*.iws
+boleto/*.iml
+boleto/*.ipr
+boleto/gradle/*
+
+# Annotation Processing
+boleto/.apt_generated/
+associado/.apt_generated/
+
+
+# Annotation Processing
+boleto/.apt_generated
+associado/.apt_generated
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### Java ###
+# Compiled class file
+boleto/*.class
+associado/*.class
+
+# Log file
+boleto/*.log
+associado/*.log
+
+
+
+# Package Files #
+boleto/*.war
+boleto/*.nar
+boleto/*.ear
+boleto/*.zip
+boleto/*.tar.gz
+boleto/*.rar
+
+associado/*.war
+associado/*.nar
+associado/*.ear
+associado/*.zip
+associado/*.tar.gz
+associado/*.rar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Some additional ignores (sort later)
+*.DS_Store
+*.sw?
+.#*
+*#
+*~
+.classpath
+.project
+.settings
+bin
+build
+target
+dependency-reduced-pom.xml
+*.sublime-*
+/scratch
+.gradle
+README.html
+.exercism

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  service1:
+    build:
+      context: ./associado
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - gft-net
+    restart: on-failure
+
+  service2:
+    build:
+      context: ./boleto
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    depends_on:
+      - db
+    networks:
+      - gft-net
+    restart: on-failure
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: gft
+      MYSQL_PASSWORD: myqsl
+      MYSQL_ROOT_PASSWORD: mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - gft-net
+
+networks:
+  gft-net:
+    driver: bridge
