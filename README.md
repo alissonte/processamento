@@ -1,4 +1,4 @@
-# Projeto GFT
+# Projeto Boleto/Associado
 
 Este projeto consiste em duas aplicações Spring Boot (Associado e Boleto) e um banco de dados MySQL. A seguir, está um guia de como configurar e executar este projeto usando Docker.
 
